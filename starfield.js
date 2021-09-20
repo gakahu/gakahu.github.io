@@ -25,12 +25,7 @@ function is_touch_enabled() {
 function draw() {
   background(0);
 
-  if(mouseX < width/2-10){
-    speed = map(mouseX, 0, width, 10, 0);
-  }
-  if(mouseX > width/2+10){
-    speed = map(mouseX, 0, width, 0, 10);
-  }
+  speed = random(1,10);
   
   translate(width / 2, height / 2);
   for (let i = 0; i < stars.length; i++) {
