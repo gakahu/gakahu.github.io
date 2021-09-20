@@ -25,7 +25,7 @@ function is_touch_enabled() {
 function draw() {
   background(0);
   if( is_touch_enabled() ) { 
-    speed = 6;
+    speed = 60;
     // var container = document.getElementById('homeCanvas');
     // container.ontouchstart="faster()";
     // container.ontouchend="slower()";
