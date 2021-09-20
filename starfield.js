@@ -3,7 +3,7 @@
 // Thanks Prof!!
 
 let stars = [];
-let speed = random(1,10);
+let speed = 6;
 let check =0;
 function setup() { 
   var canvasDiv = document.getElementById('homeCanvas');
