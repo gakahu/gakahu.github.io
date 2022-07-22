@@ -133,16 +133,19 @@
     padding-top:150px;
 }
 .col-1-of-1{
-    display: inline-block;
     padding-left:0;
-    padding-bottom: 100px;
+    display: inline-block ;
+    width: 500px;
+    height:1000px;
+    /* padding-bottom: 100px; */
     
 }
 .col-1-of-2{
     float: none;
     margin-left: 0;
-    padding-bottom: 100px;
-    display: inline-block;
-    width:100%;
+    
+    display: inline-block ;
+    width: 500px;
+    height:500px;
 }
 }
