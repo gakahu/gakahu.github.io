@@ -91,7 +91,7 @@
 }
 .col-1-of-1{
     height:40vh;
-    padding-left:20em;
+    padding-left:20rem;
     /* padding-bottom: 2em; */
 }
 .col-1-of-2{
@@ -127,3 +127,22 @@
 }
 
 /* ------------------------------------------------------------mobile-stuff------------------------------------------------------------------------------------------------------ */
+@media screen and (max-width:700px){
+    /* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
+.content-wrapper{
+    padding-top:150px;
+}
+.col-1-of-1{
+    display: inline-block;
+    padding-left:0;
+    padding-bottom: 100px;
+    
+}
+.col-1-of-2{
+    float: none;
+    margin-left: 0;
+    padding-bottom: 100px;
+    display: inline-block;
+    width:100%;
+}
+}
