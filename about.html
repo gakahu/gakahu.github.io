@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Arthur Gakahu</title>
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+      <!-- <script src="jquery/jquery-2.2.4.min.js"></script>
+      <script src="jquery/jquery.mobile-1.4.5.min.js"></script> -->
+      <link rel = "stylesheet" href="normalize.css">
+      <link rel = "stylesheet" href="main.css"> 
+      <link rel = "stylesheet" href="nav.css"> 
+      <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          // do the same for the title
+          var y = document.getElementById("myTitle");
+          if (y.className === "title") {
+            y.className += " houdini";
+          } else {
+            y.className = "title";
+          }
+        }
+      </script>
+    </head>
+    <body>
+      <!-------------------------------------------------------ABOUT PAGE------------------------------------------------------------------------------------->
+        <div class="header">
+            <div class="title" id="myTitle">
+            <a href="#home" class="logo">Arthur<br>Gakahu</a>
+            </div>
+            <div class="topnav" id="myTopnav">  
+            <a href="index.html" >Home</a>
+            <a href="about.html"class="active">About</a>
+            <a class="dropdown"> Gallery
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="2d.html">2D animation</a>
+                <a href="3d.html">3D animation</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </div>        
+        <div class = "content-wrapper">
+          <div class = "center-div" id = "about-page">
+            <p id="about-info">making moving images using computers</p>
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+        </div>
+        <div class = "footer">
+          <div class="studio">
+            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          </div> 
+          <div class = "email"> 
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+          <div class = "media-links">
+            <a class = "vimeo-link" href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+            <a  class = "yt-link" href="https://www.youtube.com/channel/UCtntidRzt1H7tZni9INofXw" target ="_blank"><img src="data/images/youtube.png"></a>
+          </div>   
+        </div>
+    </body>    
+</html>

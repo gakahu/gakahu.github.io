@@ -1,5 +1,69 @@
+/* body{
+    background-color:rgba(255, 255, 255, 1.00);
+    border:solid black;
+} */
+#animation_container{
+    border: solid black;
+}
+/* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
+.content-wrapper{
+    height: 100vh;
+}
+
+.col-1-of-1{
+    height:40vh;
+    /* padding-left:20rem; */
+    /* padding-bottom: 2em; */
+}
+.col-1-of-2{
+    float: left;
+    height:100%;
+    width:40%;
+    margin-left: 4em;
+}
+/* ------------------------------------------------------------footer------------------------------------------------------------------------------------------------------ */
+#home_footer{
+   position: relative;
+}
+.footer{
+    padding-left : 2.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #686868;
+    border:solid black;
+}
+.email img{
+    float : left;
+    padding-top: 0.2em;
+}
+.email p{
+    padding-left: 2em;
+    color: whitesmoke;
+    font-family: monospace;
+}
+.media-links{
+    width : 40%;
+}
+.media-links img{
+    padding-right: 2em;
+}
+.studio{
+    float : right;
+}
+.studio img{
+    padding-top: 15px;
+    float : left;
+}
+.studio p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: white;
+    padding-left: 0.6em;
+    padding-right: 2em;
+    float : right;
+}
 /* ------------------------------------------------------------header/nav------------------------------------------------------------------------------------------------------ */
-.header{
+/* .title{
     position: fixed;
     top:0;
     left:0;
@@ -44,62 +108,9 @@
 }
 .active-link p:hover{
     font-size: 110%;
-}
-.content-wrapper{
-    height: 100vh;
-}
-/* ------------------------------------------------------------footer------------------------------------------------------------------------------------------------------ */
-.footer{
- padding-left : 2.2em;
- padding-top: 1em;
- padding-bottom: 1em;
- background-color: #686868;
-}
-.email img{
-    float : left;
-    padding-top: 0.2em;
-}
-.email p{
-    padding-left: 2em;
-    color: whitesmoke;
-    font-family: monospace;
-}
-.media-links{
-    width : 40%;
-}
-.media-links img{
-    padding-right: 2em;
-}
-.studio{
-    float : right;
-}
-.studio img{
-    padding-top: 15px;
-    float : left;
-}
-.studio p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    color: white;
-    padding-left: 0.6em;
-    padding-right: 2em;
-    float : right;
-}
-/* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
-.content-wrapper{
-    padding-top: 100px;
-}
-.col-1-of-1{
-    height:40vh;
-    padding-left:20rem;
-    /* padding-bottom: 2em; */
-}
-.col-1-of-2{
-    float: left;
-    height:100%;
-    width:40%;
-    margin-left: 4em;
-}
+} */
+
+
 /* ------------------------------------------------------------about-page------------------------------------------------------------------------------------------------------ */
 .center-div{
     position: fixed;
@@ -127,11 +138,12 @@
 }
 
 /* ------------------------------------------------------------mobile-stuff------------------------------------------------------------------------------------------------------ */
-@media screen and (max-width:700px){
+/*@media screen and (max-width:700px){
     /* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
-.content-wrapper{
-    padding-top:150px;
+/*.content-wrapper{
+     padding-top:150px; 
 }
+
 .col-1-of-1{
     height: 80vh;
     display: inline-block;
@@ -143,5 +155,5 @@
     display: inline;
     width: 100%;
     height:100%;
-}
-}
+} 
+}*/
