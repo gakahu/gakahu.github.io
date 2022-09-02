@@ -1,19 +1,27 @@
 /* Make the title float left */
 .title{
     float:left;
+    /* border:fuchsia solid; */
 }
+/* style the name title */
+.title h3{
+  color: white;
 
+}
+.title a{
+  text-decoration: none;
+}
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
+    /* background-color: #333;
+    overflow: hidden; */
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
+    /* float: right;
+    display: block;*/
+    color: #f2f2f2; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -28,7 +36,7 @@
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: black;
     color: white;
   }
   
@@ -62,5 +70,8 @@
     }
     .title.houdini{
         display:none;
+    }
+    #gallery_toppadding{
+      padding-top: 5em;
     }
   }

@@ -1,120 +1,399 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Gakahu</title>
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
-    <script src="jquery/jquery-2.2.4.min.js"></script>
-    <script src="jquery/jquery.mobile-1.4.5.min.js"></script> -->
-    <link rel = "stylesheet" href="normalize.css">
-    <link rel = "stylesheet" href="main.css"> 
-    <link rel = "stylesheet" href="nav.css"> 
-            
-    <!--------------------animate cc code begins here------------------------------------------------------------------->
-    <style>
-      #animation_container {
-      /* position:absolute; */
-      margin:auto;
-      left:0;right:0;
-      top:0;bottom:0;
-      }
-    </style>
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script src="runner.js"></script>
-    <script>
-    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-    function init() {
-      canvas = document.getElementById("canvas");
-      anim_container = document.getElementById("animation_container");
-      dom_overlay_container = document.getElementById("dom_overlay_container");
-      var comp=AdobeAn.getComposition("D47052C228F86344A04B9ABFEB006297");
-      var lib=comp.getLibrary();
-      handleComplete({},comp);
-    }
-    function handleComplete(evt,comp) {
-      //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-      var lib=comp.getLibrary();
-      var ss=comp.getSpriteSheet();
-      exportRoot = new lib.runner();
-      stage = new lib.Stage(canvas);	
-      //Registers the "tick" event listener.
-      fnStartAnimation = function() {
-        stage.addChild(exportRoot);
-        createjs.Ticker.framerate = lib.properties.fps;
-        createjs.Ticker.addEventListener("tick", stage);
-      }	    
-      //Code to support hidpi screens and responsive scaling.
-      AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
-      AdobeAn.compositionLoaded(lib.properties.id);
-      fnStartAnimation();
-    }
-    </script>
- <!-----------------------------animate cc code ends here-------------------------------------------------------------------------------->  
-    <script>
-      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
+    <head>
+      <meta charset = "utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <title>Arthur Gakahu</title>
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+      <script src="jquery/jquery-2.2.4.min.js"></script>
+      <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+      <link rel = "stylesheet" href="normalize.css">
+      <link rel = "stylesheet" href="main.css">  
+      <link rel = "stylesheet" href="nav.css"> 
+      <!--------------------animate cc code begins here------------------------------------------------------------------->
+      <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+      <script src="dancer.js"></script>
+      <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+          canvas = document.getElementById("canvas");
+          anim_container = document.getElementById("animation_container");
+          dom_overlay_container = document.getElementById("dom_overlay_container");
+          var comp=AdobeAn.getComposition("0FC5237CB528114381BBC69F2497FDCC");
+          var lib=comp.getLibrary();
+          handleComplete({},comp);
         }
-        // do the same for the title
-        var y = document.getElementById("myTitle");
-        if (y.className === "title") {
-          y.className += " houdini";
-        } else {
-          y.className = "title";
+        function handleComplete(evt,comp) {
+          //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+          var lib=comp.getLibrary();
+          var ss=comp.getSpriteSheet();
+          exportRoot = new lib.loopforweb();
+          stage = new lib.Stage(canvas);	
+          //Registers the "tick" event listener.
+          fnStartAnimation = function() {
+            stage.addChild(exportRoot);
+            createjs.Ticker.framerate = lib.properties.fps;
+            createjs.Ticker.addEventListener("tick", stage);
+          }	    
+          //Code to support hidpi screens and responsive scaling.
+          AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+          AdobeAn.compositionLoaded(lib.properties.id);
+          fnStartAnimation();
         }
-      }
-    </script>
-  </head>
-  <body onload="init();">
-    <!-------------------------------------------------------HOME PAGE------------------------------------------------------------------------------------->
-    <div class="header">
-      <div class="title" id="myTitle">
-        <a href="#home" class="logo">Arthur<br>Gakahu</a>
-      </div>
-      <div class="topnav" id="myTopnav">  
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a class="dropdown"> Gallery
-            <i class="fa fa-caret-down"></i>
-        </a>
-        <div class="dropdown-content">
-          <a href="2d.html">2D animation</a>
-          <a href="3d.html">3D animation</a>
+      </script>
+      <!-----------------------------animate cc code ends here-------------------------------------------------------------------------------->  
+      <!--------------------mobile menu code begins here-------------------------------------------------------------------> 
+      <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+    ////////// home page
+          var x = document.getElementById("myTopnav1");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          // do the same for the title
+          var y = document.getElementById("myTitle1");
+          if (y.className === "title") {
+            y.className += " houdini";
+          } else {
+            y.className = "title";
+          }
+    ////////// about page
+          var x = document.getElementById("myTopnav2");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          // do the same for the title
+          var y = document.getElementById("myTitle2");
+          if (y.className === "title") {
+            y.className += " houdini";
+          } else {
+            y.className = "title";
+          }
+    ////////// gallery page
+          var x = document.getElementById("myTopnav3");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          // do the same for the title
+          var y = document.getElementById("myTitle3");
+          if (y.className === "title") {
+            y.className += " houdini";
+          } else {
+            y.className = "title";
+          }
+        }
+      </script>
+    </head>
+    <body onload="init();">
+      <!-------------------------------------------------------HOME PAGE------------------------------------------------------------------------------------->
+      <div data-role="page" id = "home">       
+        <div data-role="content" class = "content-wrapper" id="col-home">
+          <!-------------------------animate cc begins here---------------> 
+          <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00)">
+            <canvas id="canvas" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; display: block;">
+            </div>
+          </div>
+          <!-------------------------animate cc ends here-----------------> 
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
-    <div class="content-wrapper">    
-        <!-------------------------animate cc begins here---------------> 
-      <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1793px; height:800px">
-        <canvas id="canvas" width="1793" height="800" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1793px; height:800px; position: absolute; left: 0px; top: 0px; display: block;">
+        <div class="mobile-menu">
+          <div class = "title" id="myTitle1">
+            <a class ="title-link" href="#home"><h3>ARTHUR <br> GAKAHU</h3></a>
+          </div>  
+          <div class="topnav" id="myTopnav1">  
+              <a href="#home" class="active">Home</a>
+              <a href="#about">About</a>
+              <a href="#gallery"> Gallery</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+          </div>
+        </div> 
+        <div class = "footer">
+          <div class="studio">
+            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          </div> 
+          <div class = "email"> 
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+          <div class = "media-links">
+            <div class = "vimeo-link">
+              <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+            </div>
+            <div class = "yt-link">
+              <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+            </div>
+          </div>    
+        </div>
+        <div class = "header">    
+          <div class = "name">
+            <a class ="name-link" href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
+            <!-- <p class ="mimi-ni">artist</p> -->
+          </div>   
+          <div class = "nav">
+            <ul>
+              <li class = "nav-list"><a class = "inactive-link" href="#home"><p>Home</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#about"><p>About</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#gallery"><p>Gallery</p></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div> 
-      <!-------------------------animate cc ends here-----------------> 
-    <div class = "footer" id ="home_footer">
-      <div class="studio">
-        <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
-      </div> 
-      <div class = "email"> 
-        <img src="data/images/email.png">
-        <p>arthurgakahu@gmail.com</p>
+      <!-------------------------------------------------------ABOUT PAGE------------------------------------------------------------------------------------->
+      <div data-role="page" id = "about">  
+        <div class="mobile-menu">
+          <div class = "title" id="myTitle2">
+            <a class ="title-link" href="#home"><h3>ARTHUR <br> GAKAHU</h3></a>
+          </div>  
+          <div class="topnav" id="myTopnav2">  
+              <a href="#home">Home</a>
+              <a href="#about" class="active">About</a>
+              <a href="#gallery"> Gallery</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+          </div>
+        </div>      
+        <div data-role="content" class = "content-wrapper">
+          <div class = "center-div" id = "about-page">
+            <p id="about-info">making moving images using computers</p>
+            <img src="data/images/email.png">
+            <p id="email-address">arthurgakahu@gmail.com</p>
+          </div>
+        </div> 
+        <div class = "footer">
+          <div class="studio">
+            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          </div> 
+          <div class = "email"> 
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+          <div class = "media-links">
+            <div class = "vimeo-link">
+              <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+            </div>
+            <div class = "yt-link">
+              <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+            </div>
+          </div>   
+        </div>
+        <div class = "header">    
+          <div class = "name">
+            <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
+          </div>   
+          <div class = "nav">
+            <ul>
+              <li class = "nav-list"><a class = "active-link" href="#home"><p>Home</p></a></li>
+              <li class = "nav-list"><a class = "inactive-link" href="#about"><p>About</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#gallery"><p>Gallery</p></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class = "media-links">
-        <a class = "vimeo-link" href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
-        <a  class = "yt-link" href="https://www.youtube.com/channel/UCtntidRzt1H7tZni9INofXw" target ="_blank"><img src="data/images/youtube.png"></a>
-      </div>   
-    </div>
-  </body> 
+      <!-------------------------------------------------------GALLERY PAGE------------------------------------------------------------------------------------->
+      <div data-role="page" id = "gallery"> 
+        <div class="mobile-menu">
+          <div class = "title" id="myTitle3">
+            <a class ="title-link" href="#home"><h3>ARTHUR <br> GAKAHU</h3></a>
+          </div>  
+          <div class="topnav" id="myTopnav3">  
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#gallery" class="active"> Gallery</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+          </div>
+        </div>       
+        <div data-role="content" class = "content-wrapper" id="gallery_toppadding">         
+          <div class="top-spacer"></div>
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <a href = "#2D"><div class = "col-1-of-2" id = "gallery_link_2D">2D</div></a>
+            <a href = "#3D"><div class = "col-1-of-2" id = "gallery_link_3D">3D</div></a>
+          </div>
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <a href = "#D3"><div class = "col-1-of-2" id = "gallery_link_D3"><p class="thumbnail">D3</p></div></a>
+            <a href = "https://arthurgakahu.tumblr.com/" target ="_blank">
+              <div class = "col-1-of-2" id = "gallery_link_tumblr"><p class="thumbnail">more...</p></div>
+            </a>
+          </div>   
+        </div> 
+        <div class = "footer">
+          <div class="studio">
+            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          </div> 
+          <div class = "email"> 
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+          <div class = "media-links">
+            <div class = "vimeo-link">
+              <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+            </div>
+            <div class = "yt-link">
+              <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+            </div>
+          </div>    
+        </div>
+        <div class = "header">    
+          <div class = "name">
+            <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
+          </div>   
+          <div class = "nav">
+            <ul>
+              <li class = "nav-list"><a class = "active-link" href="#home"><p>Home</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#about"><p>About</p></a></li>
+              <li class = "nav-list"><a class = "inactive-link" href="#gallery"><p>Gallery</p></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------------------------2D-page--------------------------------------------------------------------------------------->
+      <div data-role="page" id = "2D">        
+        <div data-role="content" class = "content-wrapper">
+          <div class="top-spacer"></div>
+          <div class="back-button">
+            <a href="#gallery"> &#8592 back</a>
+          </div>
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <div class = "col-1-of-2"><iframe class="mbona" title="vimeo-player" src="https://player.vimeo.com/video/732476935?h=854828be57" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732478539?h=ec7b7f6efa" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+          </div>
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732479853?h=25b395e477" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732475109?h=89dff8e8e7" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+          </div>      
+        </div>
+        <div class = "footer">
+          <div class="studio">
+            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          </div> 
+          <div class = "email"> 
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+          <div class = "media-links">
+            <div class = "vimeo-link">
+              <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+            </div>
+            <div class = "yt-link">
+              <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+            </div>
+          </div>   
+        </div>
+        <div class = "header">    
+          <div class = "name">
+            <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
+          </div>   
+          <div class = "nav">
+            <ul>
+              <li class = "nav-list"><a class = "inactive-link" href="#home"><p>Home</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#about"><p>About</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#gallery"><p>Gallery</p></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------------------------3D-page--------------------------------------------------------------------------------------->
+      <div data-role="page" id = "3D">        
+        <div data-role="content" class = "content-wrapper">
+          <div class="top-spacer"></div>
+          <div class="back-button">
+            <a href="#gallery"> &#8592 back</a>
+          </div>
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732471043?h=3a20964220" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732473341?h=e419e44022" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+          </div>
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/464310025?h=970511411b" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732480724?h=1dd31caa58" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+          </div>
+        </div>
+        <div class = "footer">
+          <div class="studio">
+            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          </div> 
+          <div class = "email"> 
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+          <div class = "media-links">
+            <div class = "vimeo-link">
+              <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+            </div>
+            <div class = "yt-link">
+              <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+            </div>
+          </div>  
+        </div>
+        <div class = "header">    
+          <div class = "name">
+            <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
+          </div>   
+          <div class = "nav">
+            <ul>
+              <li class = "nav-list"><a class = "inactive-link" href="#home"><p>Home</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#about"><p>About</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#gallery"><p>Gallery</p></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------------------------D3-page--------------------------------------------------------------------------------------->
+      <div data-role="page" id = "D3">        
+        <div data-role="content" class = "content-wrapper">
+          <div class="back-button">
+            <a href="#gallery"> &#8592 back</a>
+          </div>
+        </div>
+        <div class = "footer">
+          <div class="studio">
+            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          </div> 
+          <div class = "email"> 
+            <img src="data/images/email.png">
+            <p>arthurgakahu@gmail.com</p>
+          </div>
+          <div class = "media-links">
+            <div class = "vimeo-link">
+              <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+            </div>
+            <div class = "yt-link">
+              <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+            </div>
+          </div>   
+        </div>
+        <div class = "header">    
+          <div class = "name">
+            <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
+          </div>   
+          <div class = "nav">
+            <ul>
+              <li class = "nav-list"><a class = "inactive-link" href="#home"><p>Home</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#about"><p>About</p></a></li>
+              <li class = "nav-list"><a class = "active-link" href="#gallery"><p>Gallery</p></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body> 
 </html>

@@ -1,69 +1,28 @@
-/* body{
-    background-color:rgba(255, 255, 255, 1.00);
-    border:solid black;
-} */
+* {
+    margin: 0;
+    padding: 0;
+    }
+.back-button{
+    display: none;
+    text-align: center;
+}
+/* ------------------------------------------------------------animation------------------------------------------------------------------------------------------------------ */
 #animation_container{
-    border: solid black;
-}
-/* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
-.content-wrapper{
-    height: 100vh;
-}
-
-.col-1-of-1{
-    height:40vh;
-    /* padding-left:20rem; */
-    /* padding-bottom: 2em; */
-}
-.col-1-of-2{
-    float: left;
-    height:100%;
-    width:40%;
-    margin-left: 4em;
-}
-/* ------------------------------------------------------------footer------------------------------------------------------------------------------------------------------ */
-#home_footer{
-   position: relative;
-}
-.footer{
-    padding-left : 2.2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background-color: #686868;
-    border:solid black;
-}
-.email img{
-    float : left;
-    padding-top: 0.2em;
-}
-.email p{
-    padding-left: 2em;
-    color: whitesmoke;
-    font-family: monospace;
-}
-.media-links{
-    width : 40%;
-}
-.media-links img{
-    padding-right: 2em;
-}
-.studio{
-    float : right;
-}
-.studio img{
-    padding-top: 15px;
-    float : left;
-}
-.studio p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    color: white;
-    padding-left: 0.6em;
-    padding-right: 2em;
-    float : right;
+    position:absolute;
+    /* margin:auto; */
+    left:0;right:0;
+    top:0;bottom:0;
 }
 /* ------------------------------------------------------------header/nav------------------------------------------------------------------------------------------------------ */
-/* .title{
+.mobile-menu{
+    display: none;
+    position: absolute;
+    background-color: #000;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.header{
     position: fixed;
     top:0;
     left:0;
@@ -73,6 +32,20 @@
     padding-left: 1em;
     padding-bottom: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.name-link{
+    /* position: absolute; */
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.mimi-ni{
+    position: relative;
+    top:-16px;
+    text-align: center;
+    padding-right: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #378FE6;
 }
 .nav{
     display: inline-block;
@@ -86,6 +59,9 @@
     list-style-type: none;
     padding-left:1em;
     padding-right: 1em;
+}
+.nav-list{
+    padding-bottom: 1em ;
 }
 .nav a{
     text-decoration: none;
@@ -108,15 +84,121 @@
 }
 .active-link p:hover{
     font-size: 110%;
+}
+.content-wrapper{
+    height: 100vh;
+}
+/* ------------------------------------------------------------footer------------------------------------------------------------------------------------------------------ */
+.footer{
+    position: relative;
+    padding-left : 2.2em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    background-color: #686868;
+}
+.email{
+    width : 40%;
+    padding-bottom: 1em;
+}
+.email img{
+    float : left;
+    padding-top: 0.15em;
+    padding-right: 0.5em;
+}
+.email p{
+    padding-left: 2em;
+    color: whitesmoke;
+    font-family: monospace;
+}
+.media-links{
+    width : 40%;  
+}
+.vimeo-link{
+    float: left;
+    padding-right: 2em;
+}
+.yt-link{
+    padding-top: 0.15em;
+}
+.studio{
+    float : right;
+    padding-top: 0.5em;
+}
+.studio img{
+    float : left;
+}
+.studio p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    color: white;
+    padding-top: 0.4em;
+    padding-left: 0.6em;
+    padding-right: 2em;
+    float : right;
+}
+/* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
+.content-wrapper{
+    /* make it white to match the animation background in the home page */
+    background-color: white;
+}
+.top-spacer{
+    /* spacing between the top and the content  */
+    display: inline-block;
+    width: 100%;
+    height: 16%;
+}
+.side-spacer{
+    /* this column creates space btw the nav menu and the content */
+    /* display: inline-block; */
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.col-1-of-1{
+    height:40vh;
+    padding-top: 1em;
+}
+.col-1-of-2{
+    float: left;
+    height:100%;
+    width:30%;
+    margin-left: 4em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40vh; 
+
+}
+#gallery_link_2D{
+    background-image: url(data/images/2D.png);
+    background-repeat: no-repeat;
+}
+#gallery_link_3D{
+    background-image: url(data/images/3D.png);
+    background-repeat: no-repeat;
+}
+#gallery_link_D3{
+    background-image: url(data/images/image_placeholder.png);
+    background-repeat: no-repeat;
+}
+#gallery_link_tumblr{
+    background-image: url(data/images/more.png);
+    background-repeat: no-repeat;
+}
+
+/* .thumbnail {
+    background-color: aliceblue;
+    font-size: 40px;
+    width: 20px;
+    height: 20px;
+    color: grey;
+    border:#378FE6 solid;
 } */
-
-
 /* ------------------------------------------------------------about-page------------------------------------------------------------------------------------------------------ */
 .center-div{
     position: fixed;
     top: 30%;
     left:40%;
-    height:100%;
     text-align: center;
 }
 #about-page img{
@@ -125,35 +207,69 @@
     padding-right: 0.25em;
 }
 #about-page p{
-    text-align: left;
     font-family: monospace;
     padding-bottom: 2em;
 }
 #about-info{
     font-size: larger;
 }
-.tumblr-link{
-    padding-right: 20em;
-    text-align: right;
+
+#email-address{
+    /* push the email adress to the left*/
+    text-align: left;
 }
 
 /* ------------------------------------------------------------mobile-stuff------------------------------------------------------------------------------------------------------ */
-/*@media screen and (max-width:700px){
-    /* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
-/*.content-wrapper{
-     padding-top:150px; 
+@media screen and (max-width:700px){
+#animation_container{
+    /* push animation to the left in small screens */
+    position: relative;
+    left: -400px;
+    /* top:200px; */
 }
-
-.col-1-of-1{
-    height: 80vh;
+/* ------------------------------------------------------------nav bar------------------------------------------------------------------------------------------------------ */
+.header{
+    /* nav/menu disappears */
+    display: none;
+}
+.mobile-menu{
     display: inline-block;
-    padding-left:0;  
+}
+/* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
+.col-1-of-1{
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+}
+.col-1-of-2{
+    margin: 0;
+    padding: 0;
+}
+.mbona{
+    /* the first iframe (vimeo link) in the 2d page */
+    margin: 0;
+    padding: 0;
+}
+.top-spacer{
+    display: none;
+}
+.side-spacer{
+    display: none;
 }
 .col-1-of-2{
     float: none;
     margin-left: 0;   
-    display: inline;
+    display: inline-block;
     width: 100%;
-    height:100%;
-} 
-}*/
+    height:50%;   
+}
+.center-div{
+    left:5%;
+}
+#about-page img{
+    padding-left: 3.5em;
+}
+.back-button{
+    display: inline-block;
+}
+}
