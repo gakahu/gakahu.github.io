@@ -168,8 +168,10 @@
         <div data-role="content" class = "content-wrapper">
           <div class = "center-div" id = "about-page">
             <p id="about-info">making moving images using computers</p>
-            <img src="data/images/email.png">
-            <p id="email-address">arthurgakahu@gmail.com</p>
+            <div class = "email-container">
+              <img src="data/images/email.png">
+              <p id="email-address"> <span class="email-icom">&#9993;</span> arthurgakahu@gmail.com</p>
+            </div>
           </div>
         </div> 
         <div class = "footer">
@@ -221,14 +223,14 @@
           <div class="top-spacer"></div>
           <div class="col-1-of-1">
             <div class = "side-spacer"></div>
-            <a href = "#2D"><div class = "col-1-of-2" id = "gallery_link_2D">2D</div></a>
-            <a href = "#3D"><div class = "col-1-of-2" id = "gallery_link_3D">3D</div></a>
+            <a href = "#2D"><div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_2D">2D</div></a>
+            <a href = "#3D"><div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_3D">3D</div></a>
           </div>
           <div class="col-1-of-1">
             <div class = "side-spacer"></div>
-            <a href = "#D3"><div class = "col-1-of-2" id = "gallery_link_D3"><p class="thumbnail">D3</p></div></a>
+            <a href = "#D3"><div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_D3"><p class="thumbnail">D3</p></div></a>
             <a href = "https://arthurgakahu.tumblr.com/" target ="_blank">
-              <div class = "col-1-of-2" id = "gallery_link_tumblr"><p class="thumbnail">more...</p></div>
+              <div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_tumblr"><p class="thumbnail">more...</p></div>
             </a>
           </div>   
         </div> 
@@ -363,6 +365,11 @@
         <div data-role="content" class = "content-wrapper">
           <div class="back-button">
             <a href="#gallery"> &#8592 back</a>
+          </div>
+          <div>
+            
+            <img src="data/images/on-it.png">
+
           </div>
         </div>
         <div class = "footer">
