@@ -95,9 +95,10 @@
       </script>
     </head>
     <body onload="init();">
-      <!-------------------------------------------------------HOME PAGE------------------------------------------------------------------------------------->
+      <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <!-------------------------------------------------------HOME PAGE-------------------------------------------------------------------------------------->
       <div data-role="page" id = "home">       
-        <div data-role="content" class = "content-wrapper" id="col-home">
+        <div data-role="content" class = "content-wrapper">
           <!-------------------------animate cc begins here---------------> 
           <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00)">
             <canvas id="canvas" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
@@ -106,40 +107,43 @@
           </div>
           <!-------------------------animate cc ends here-----------------> 
         </div>
-        <div class="mobile-menu">
+        <!-------------------------mobile menu begins here----------------->
+        <!-- we have it after the animation container because otherwise it is occluded -->
+        <div class="mobile-menu">        
           <div class = "title" id="myTitle1">
             <a class ="title-link" href="#home"><h3>ARTHUR <br> GAKAHU</h3></a>
           </div>  
           <div class="topnav" id="myTopnav1">  
-              <a href="#home" class="active">Home</a>
-              <a href="#about">About</a>
-              <a href="#gallery"> Gallery</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-          </div>
-        </div> 
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery"> Gallery</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>         
+        </div>
+        <!-------------------------footer begins here-----------------> 
         <div class = "footer">
-          <div class="studio">
-            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          <div class="footer-studio">
+            <img src="data/images/spark.png"><p>SPARK <br> STUDIOS</p>
           </div> 
-          <div class = "email"> 
-            <img src="data/images/email.png">
+          <div class = "footer-email"> 
+            <span>&#9993;</span>
             <p>arthurgakahu@gmail.com</p>
           </div>
-          <div class = "media-links">
-            <div class = "vimeo-link">
+          <div class = "footer-media-links">
+            <div class = "footer-vimeo-link">
               <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
             </div>
-            <div class = "yt-link">
+            <div class = "footer-yt-link">
               <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
             </div>
-          </div>    
+          </div>  
         </div>
+        <!-------------------------header/big screen menu begins here-----------------> 
         <div class = "header">    
           <div class = "name">
             <a class ="name-link" href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
-            <!-- <p class ="mimi-ni">artist</p> -->
           </div>   
           <div class = "nav">
             <ul>
@@ -150,8 +154,10 @@
           </div>
         </div>
       </div>
+      <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
       <!-------------------------------------------------------ABOUT PAGE------------------------------------------------------------------------------------->
-      <div data-role="page" id = "about">  
+      <div data-role="page" id = "about">
+        <!-------------------------mobile menu begins here----------------->  
         <div class="mobile-menu">
           <div class = "title" id="myTitle2">
             <a class ="title-link" href="#home"><h3>ARTHUR <br> GAKAHU</h3></a>
@@ -164,33 +170,35 @@
                 <i class="fa fa-bars"></i>
               </a>
           </div>
-        </div>      
+        </div>   
+        <!-------------------------about page content begins here----------------->   
         <div data-role="content" class = "content-wrapper">
-          <div class = "center-div" id = "about-page">
-            <p id="about-info">making moving images using computers</p>
-            <div class = "email-container">
-              <img src="data/images/email.png">
-              <p id="email-address"> <span class="email-icom">&#9993;</span> arthurgakahu@gmail.com</p>
+          <div class = "about-info">
+            <p>making moving images</p>
+            <div>
+              <p> <span class="email-icon">&#9993;</span> arthurgakahu@gmail.com</p>
             </div>
           </div>
         </div> 
+        <!-------------------------footer begins here----------------->
         <div class = "footer">
-          <div class="studio">
-            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          <div class="footer-studio">
+            <img src="data/images/spark.png"><p>SPARK <br> STUDIOS</p>
           </div> 
-          <div class = "email"> 
-            <img src="data/images/email.png">
+          <div class = "footer-email"> 
+            <span>&#9993;</span>
             <p>arthurgakahu@gmail.com</p>
           </div>
-          <div class = "media-links">
-            <div class = "vimeo-link">
+          <div class = "footer-media-links">
+            <div class = "footer-vimeo-link">
               <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
             </div>
-            <div class = "yt-link">
+            <div class = "footer-yt-link">
               <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
             </div>
-          </div>   
+          </div>  
         </div>
+        <!-------------------------header/big screen menu begins here----------------->
         <div class = "header">    
           <div class = "name">
             <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
@@ -204,8 +212,10 @@
           </div>
         </div>
       </div>
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
       <!-------------------------------------------------------GALLERY PAGE------------------------------------------------------------------------------------->
-      <div data-role="page" id = "gallery"> 
+      <div data-role="page" id = "gallery">
+        <!-------------------------mobile menu begins here-----------------> 
         <div class="mobile-menu">
           <div class = "title" id="myTitle3">
             <a class ="title-link" href="#home"><h3>ARTHUR <br> GAKAHU</h3></a>
@@ -218,39 +228,50 @@
                 <i class="fa fa-bars"></i>
               </a>
           </div>
-        </div>       
-        <div data-role="content" class = "content-wrapper" id="gallery_toppadding">         
+        </div> 
+        <!-------------------------gallery page content begins here----------------->       
+        <div data-role="content" class = "content-wrapper">         
           <div class="top-spacer"></div>
           <div class="col-1-of-1">
             <div class = "side-spacer"></div>
-            <a href = "#2D"><div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_2D">2D</div></a>
-            <a href = "#3D"><div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_3D">3D</div></a>
+            <div class = "col-1-of-2 gallery-link-2D">
+              <a href = "#2D"><div class="gallery-button">2D</div></a>
+            </div>
+            <div class = "col-1-of-2 gallery-link-3D">
+              <a href = "#3D"><div class="gallery-button">3D</div></a>
+            </div>
           </div>
           <div class="col-1-of-1">
             <div class = "side-spacer"></div>
-            <a href = "#D3"><div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_D3"><p class="thumbnail">D3</p></div></a>
-            <a href = "https://arthurgakahu.tumblr.com/" target ="_blank">
-              <div class = "col-1-of-2" class ="gallery_links" id = "gallery_link_tumblr"><p class="thumbnail">more...</p></div>
-            </a>
-          </div>   
-        </div> 
+            <div class = "col-1-of-2 gallery-link-D3">
+              <a href = "#D3"><div class="gallery-button">D3</div></a>
+            </div>
+            <div class = "col-1-of-2 gallery-link-tumblr">
+              <a href = "https://arthurgakahu.tumblr.com/" target ="_blank">
+                <div class="gallery-button">more stuff</div>
+              </a>
+            </div>
+          </div>         
+        </div>
+        <!-------------------------footer begins here-----------------> 
         <div class = "footer">
-          <div class="studio">
-            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          <div class="footer-studio">
+            <img src="data/images/spark.png"><p>SPARK <br> STUDIOS</p>
           </div> 
-          <div class = "email"> 
-            <img src="data/images/email.png">
+          <div class = "footer-email"> 
+            <span>&#9993;</span>
             <p>arthurgakahu@gmail.com</p>
           </div>
-          <div class = "media-links">
-            <div class = "vimeo-link">
+          <div class = "footer-media-links">
+            <div class = "footer-vimeo-link">
               <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
             </div>
-            <div class = "yt-link">
+            <div class = "footer-yt-link">
               <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
             </div>
-          </div>    
+          </div>  
         </div>
+        <!-------------------------header/big screen menu begins here----------------->
         <div class = "header">    
           <div class = "name">
             <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
@@ -264,8 +285,10 @@
           </div>
         </div>
       </div>
-      <!-------------------------------------------------------2D-page--------------------------------------------------------------------------------------->
-      <div data-role="page" id = "2D">        
+      <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <!-------------------------------------------------------2D-page---------------------------------------------------------------------------------------->
+      <div data-role="page" id = "2D">
+        <!-------------------------2D page content begins here----------------->        
         <div data-role="content" class = "content-wrapper">
           <div class="top-spacer"></div>
           <div class="back-button">
@@ -273,80 +296,34 @@
           </div>
           <div class="col-1-of-1">
             <div class = "side-spacer"></div>
-            <div class = "col-1-of-2"><iframe class="mbona" title="vimeo-player" src="https://player.vimeo.com/video/732476935?h=854828be57" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
-            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732478539?h=ec7b7f6efa" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/732476935?h=854828be57"  frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/732478539?h=ec7b7f6efa" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
           </div>
           <div class="col-1-of-1">
             <div class = "side-spacer"></div>
-            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732479853?h=25b395e477" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
-            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732475109?h=89dff8e8e7" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/732479853?h=25b395e477" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/732475109?h=89dff8e8e7" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
           </div>      
         </div>
+        <!-------------------------footer begins here----------------->
         <div class = "footer">
-          <div class="studio">
-            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          <div class="footer-studio">
+            <img src="data/images/spark.png"><p>SPARK <br> STUDIOS</p>
           </div> 
-          <div class = "email"> 
-            <img src="data/images/email.png">
+          <div class = "footer-email"> 
+            <span>&#9993;</span>
             <p>arthurgakahu@gmail.com</p>
           </div>
-          <div class = "media-links">
-            <div class = "vimeo-link">
+          <div class = "footer-media-links">
+            <div class = "footer-vimeo-link">
               <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
             </div>
-            <div class = "yt-link">
-              <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
-            </div>
-          </div>   
-        </div>
-        <div class = "header">    
-          <div class = "name">
-            <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
-          </div>   
-          <div class = "nav">
-            <ul>
-              <li class = "nav-list"><a class = "inactive-link" href="#home"><p>Home</p></a></li>
-              <li class = "nav-list"><a class = "active-link" href="#about"><p>About</p></a></li>
-              <li class = "nav-list"><a class = "active-link" href="#gallery"><p>Gallery</p></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-------------------------------------------------------3D-page--------------------------------------------------------------------------------------->
-      <div data-role="page" id = "3D">        
-        <div data-role="content" class = "content-wrapper">
-          <div class="top-spacer"></div>
-          <div class="back-button">
-            <a href="#gallery"> &#8592 back</a>
-          </div>
-          <div class="col-1-of-1">
-            <div class = "side-spacer"></div>
-            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732471043?h=3a20964220" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
-            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732473341?h=e419e44022" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
-          </div>
-          <div class="col-1-of-1">
-            <div class = "side-spacer"></div>
-            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/464310025?h=970511411b" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
-            <div class = "col-1-of-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/732480724?h=1dd31caa58" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
-          </div>
-        </div>
-        <div class = "footer">
-          <div class="studio">
-            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
-          </div> 
-          <div class = "email"> 
-            <img src="data/images/email.png">
-            <p>arthurgakahu@gmail.com</p>
-          </div>
-          <div class = "media-links">
-            <div class = "vimeo-link">
-              <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
-            </div>
-            <div class = "yt-link">
+            <div class = "footer-yt-link">
               <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
             </div>
           </div>  
         </div>
+        <!-------------------------header/big screen menu begins here----------------->
         <div class = "header">    
           <div class = "name">
             <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
@@ -360,35 +337,45 @@
           </div>
         </div>
       </div>
-      <!-------------------------------------------------------D3-page--------------------------------------------------------------------------------------->
-      <div data-role="page" id = "D3">        
+      <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <!-------------------------------------------------------3D-page---------------------------------------------------------------------------------------->
+      <div data-role="page" id = "3D">
+        <!-------------------------3D page content begins here----------------->        
         <div data-role="content" class = "content-wrapper">
+          <div class="top-spacer"></div>
           <div class="back-button">
             <a href="#gallery"> &#8592 back</a>
           </div>
-          <div>
-            
-            <img src="data/images/on-it.png">
-
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/732471043?h=3a20964220" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/732473341?h=e419e44022" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+          </div>
+          <div class="col-1-of-1">
+            <div class = "side-spacer"></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/464310025?h=970511411b" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
+            <div class = "col-1-of-2"><iframe class="vimeo-link" title="vimeo-player" src="https://player.vimeo.com/video/732480724?h=1dd31caa58" width="400" height="200" frameborder="0" allowfullscreen></iframe></div>
           </div>
         </div>
+        <!-------------------------footer begins here----------------->
         <div class = "footer">
-          <div class="studio">
-            <img src="data/images/spark.png"><p class ="studio-font">SPARK <br> STUDIOS</p>
+          <div class="footer-studio">
+            <img src="data/images/spark.png"><p>SPARK <br> STUDIOS</p>
           </div> 
-          <div class = "email"> 
-            <img src="data/images/email.png">
+          <div class = "footer-email"> 
+            <span>&#9993;</span>
             <p>arthurgakahu@gmail.com</p>
           </div>
-          <div class = "media-links">
-            <div class = "vimeo-link">
+          <div class = "footer-media-links">
+            <div class = "footer-vimeo-link">
               <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
             </div>
-            <div class = "yt-link">
+            <div class = "footer-yt-link">
               <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
             </div>
-          </div>   
+          </div>  
         </div>
+        <!-------------------------header/big screen menu begins here----------------->
         <div class = "header">    
           <div class = "name">
             <a href="#home"><h1>ARTHUR <br> GAKAHU</h1></a>
@@ -402,5 +389,7 @@
           </div>
         </div>
       </div>
+      <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <!-------------------------------------------------------D3-page---------------------------------------------------------------------------------------->
     </body> 
 </html>

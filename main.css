@@ -2,19 +2,9 @@
     margin: 0;
     padding: 0;
     }
-.back-button{
-    display: none;
-    text-align: center;
-}
-/* ------------------------------------------------------------animation------------------------------------------------------------------------------------------------------ */
-#animation_container{
-    position:absolute;
-    /* margin:auto; */
-    left:0;right:0;
-    top:0;bottom:0;
-}
-/* ------------------------------------------------------------header/nav------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------menu/nav------------------------------------------------------------------------------------------------------ */
 .mobile-menu{
+/* mobile menu that is only visible on small screens */
     display: none;
     position: absolute;
     background-color: #000;
@@ -22,38 +12,45 @@
     left:0;
     width: 100%;
 }
+.title{
+/* the container for my name in mobile menu */
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.title h3{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
 .header{
+/* the header/menu that is visible on bigger screens */
     position: fixed;
     top:0;
     left:0;
 }
 .name{
+/* the name that is visible in the header */
     width : 10em;
     padding-left: 1em;
     padding-bottom: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .name-link{
+/* link attached to the name in the header */
     /* position: absolute; */
     display: block;
     margin: 0;
     padding: 0;
 }
-.mimi-ni{
-    position: relative;
-    top:-16px;
-    text-align: center;
-    padding-right: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #378FE6;
-}
 .nav{
+/* the navigation menu in the header */
     display: inline-block;
     margin: 0 ;
     padding: 0;  
     padding-left:2px; 
 }
 .nav ul{
+/* the unordered list for the header menu */
     margin: 0 ;
     padding: 0;
     list-style-type: none;
@@ -61,32 +58,26 @@
     padding-right: 1em;
 }
 .nav-list{
+/* each list item in the header menu */
     padding-bottom: 1em ;
 }
 .nav a{
+/* each link item attached to a list tag in the header */
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .inactive-link p{
+/* inactive links in the header menu */
     color: black;
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
 }
-.link-B {
-    margin :0;
-    padding-bottom: 0px;    
-}
-.link-B p{
-    font-size: 80%;
-}
 .active-link p{
+/* active links in the header menu */
     color : #686868;
 }
 .active-link p:hover{
     font-size: 110%;
-}
-.content-wrapper{
-    height: 100vh;
 }
 /* ------------------------------------------------------------footer------------------------------------------------------------------------------------------------------ */
 .footer{
@@ -97,38 +88,38 @@
     /* background-color: #686868; */
     background-color:#000;
 }
-.email{
+.footer-email{
     width : 40%;
     padding-bottom: 1em;
 }
-.email img{
+.footer-email img{
     float : left;
     padding-top: 0.15em;
     padding-right: 0.5em;
 }
-.email p{
+.footer-email p{
     padding-left: 2em;
     color: whitesmoke;
     font-family: monospace;
 }
-.media-links{
+.footer-media-links{
     width : 40%;  
 }
-.vimeo-link{
+.footer-vimeo-link{
     float: left;
     padding-right: 2em;
 }
-.yt-link{
+.footer-yt-link{
     padding-top: 0.15em;
 }
-.studio{
+.footer-studio{
     float : right;
     padding-top: 0.5em;
 }
-.studio img{
+.footer-studio img{
     float : left;
 }
-.studio p{
+.footer-studio p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
     color: white;
@@ -139,23 +130,26 @@
 }
 /* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
 .content-wrapper{
+/* the div containing content in each page*/
     /* make it white to match the animation background in the home page */
     background-color: white;
+    height: 100vh;
 }
 .top-spacer{
-    /* spacing between the top and the content  */
+/* this column creates space between the top and the content in the Gallery,
+2D, 3D and D3 pages */
     display: inline-block;
     width: 100%;
     height: 16%;
 }
 .side-spacer{
-    /* this column creates space btw the nav menu and the content */
+/* this column creates space btw the header/nav menu and the content in 
+the Gallery, 2D, 3D and D3 pages*/
     /* display: inline-block; */
     width: 20%;
     height: 100%;
     float: left;
 }
-
 .col-1-of-1{
     height:40vh;
     padding-top: 1em;
@@ -165,117 +159,97 @@
     height:100%;
     width:30%;
     margin-left: 4em;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 40vh; 
-
 }
-.title{
-    /* the header in mobile menu */
-    padding-left: 10px;
-    padding-top: 5px;
+/*-----------------------------------------HOME PAGE------------------------------------------------------------------------------------------------------ */
+#animation_container{
+/* animation div in the home page */
+    position:absolute;
+    left:0;right:0;
+    top:0;bottom:0;
 }
-.title h3{
-    font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-}
-
-#gallery_link_2D{
-    background-image: url(data/images/2D.png);
-    background-repeat: no-repeat;
-    opacity: 50%;
-}
-#gallery_link_3D{
-    background-image: url(data/images/3D.png);
-    background-repeat: no-repeat;
-}
-#gallery_link_D3{
-    background-image: url(data/images/image_placeholder.png);
-    background-repeat: no-repeat;
-}
-#gallery_link_tumblr{
-    background-image: url(data/images/more.png);
-    background-repeat: no-repeat;
-}
-
-/* .thumbnail {
-    background-color: aliceblue;
-    font-size: 40px;
-    width: 20px;
-    height: 20px;
-    color: grey;
-    border:#378FE6 solid;
-} */
-/* ------------------------------------------------------------about-page------------------------------------------------------------------------------------------------------ */
-.center-div{
+/*-----------------------------------------ABOUT PAGE------------------------------------------------------------------------------------------------------ */
+.about-info{
+/* div containing 'about' information */
     position: relative;
     top: 30%;
-    /* left:40%; */
     text-align: center;
-    border: saddlebrown solid;
 }
-.email-container{
-    border: black solid;
-  
-}
-.email-icom{
-    transform: scale(20,20);
-}
-#about-page img{
-    float:left; 
-    padding-left: 2em;
-    padding-right: 0.25em;
-}
-#about-page p{
+.about-info p{
+    font-size: larger;
     font-family: monospace;
     padding-bottom: 2em;
 }
-#about-info{
-    font-size: larger;
-}
-
-#email-address{
-    /* push the email adress to the left*/
-    /* text-align: left; */
-}
-
-/* ------------------------------------------------------------mobile-stuff------------------------------------------------------------------------------------------------------ */
-@media screen and (max-width:700px){
-#animation_container{
-    /* push animation to the left in small screens */
+/*-----------------------------------------GALLERY PAGE------------------------------------------------------------------------------------------------------ */
+.gallery-button{
+/* the divs in the gallery page that act as buttons */
+    display: inline-block;
     position: relative;
-    left: -400px;
-    /* top:200px; */
+    top: 185px;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;  
+    transition-duration: 0.4s;
+    cursor: pointer;  
 }
-/* ------------------------------------------------------------nav bar------------------------------------------------------------------------------------------------------ */
+.gallery-button:hover{
+    background-color: #008CBA;
+    color: white;
+}
+.gallery-link-2D{
+    background-image: url(data/images/2D.png);
+    background-repeat: no-repeat;
+}
+.gallery-link-3D{
+    background-image: url(data/images/3D.png);
+    background-repeat: no-repeat;
+}
+.gallery-link-D3{
+    background-image: url(data/images/image_placeholder.png);
+    background-repeat: no-repeat;
+}
+.gallery-link-tumblr{
+    background-image: url(data/images/more.png);
+    background-repeat: no-repeat;
+}
+/*------------------------------------------2D/3D PAGE------------------------------------------------------------------------------------------------------ */
+.back-button{
+/* the back button in the 2D and 3D pages */
+    display: none;
+    text-align: center;
+}
+.vimeo-link{
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    height: 200px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ----------------------------------------responsive/adaptive work------------------------------------------------------------------------------------------------------ */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width:700px){
+/*----------------------------------nav/menu------------------------------------------- */
 .header{
-    /* nav/menu disappears */
+/* header/menu for larger screens disappears */
     display: none;
 }
 .mobile-menu{
+/* nav/menu for smaller screens appears */
     display: inline-block;
 }
-/* ------------------------------------------------------------columns------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------columns------------------------------------------- */
 .col-1-of-1{
-    height: 100vh;
-    width: 100%;
-    display: inline-block;
+    padding-bottom: 200px;
 }
 .col-1-of-2{
+    display: inline-block;
+    float : none;
     margin: 0;
     padding: 0;
-}
-.mbona{
-    /* the first iframe (vimeo link) in the 2d page */
-    margin: 0;
-    padding: 0;
-}
-.top-spacer{
-    display: none;
-}
-.side-spacer{
-    display: none;
+    padding-bottom: 100px;
+    height: 400px;
 }
 .col-1-of-2{
     float: none;
@@ -284,12 +258,31 @@
     width: 100%;
     height:50%;   
 }
+.top-spacer{
+    display: none;
+}
+.side-spacer{
+    display: none;
+}
+/*----------------------------------HOME PAGE------------------------------------------- */
+#animation_container{
+/* push animation to the left in small screens */
+    position: relative;
+    left: -400px;
+    /* top:200px; */
+}
+/*----------------------------------ABOUT PAGE------------------------------------------- */
 .center-div{
     left:5%;
 }
 #about-page img{
     padding-left: 3.5em;
 }
+/*----------------------------------GALLERY PAGE------------------------------------------- */
+.gallery-button{
+    width: 100%;
+}
+/*----------------------------------2D/3D PAGE------------------------------------------- */
 .back-button{
     display: inline-block;
 }
