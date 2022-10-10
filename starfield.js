@@ -3,7 +3,7 @@
 // Thanks Prof!!
 
 let stars = [];
-let speed;
+let speed = 2;
 let check =0;
 function setup() { 
   var canvasDiv = document.getElementById('homeCanvas');
@@ -16,36 +16,14 @@ function setup() {
     stars[i] = new Star();
   }
 }
-function is_touch_enabled() { 
-  return ( 'ontouchstart' in window ) ||  
-         ( navigator.maxTouchPoints > 0 ) || 
-         ( navigator.msMaxTouchPoints > 0 ); 
-} 
-
 function draw() {
-  background(0);
-  if( is_touch_enabled() ) { 
-    speed =1;
-    // var container = document.getElementById('homeCanvas');
-    // container.ontouchstart="faster()";
-    // container.ontouchend="slower()";
-  } 
-  else { 
-    if(mouseX < width/2-10){
-      speed = map(mouseX, 0, width, 10, 0);
-    }
-    if(mouseX > width/2+10){
-      speed = map(mouseX, 0, width, 0, 10);
-    }
-  } 
-  
+  background(0);  
   translate(width / 2, height / 2);
   for (let i = 0; i < stars.length; i++) {
     stars[i].update();
     stars[i].show();
   }
 }
-
 function Star() {
   this.x = random(-width, width);
   this.y = random(-height, height);
@@ -61,7 +39,7 @@ function Star() {
       this.pz = this.z;
     }
   };
-
+  
   this.show = function() {
     fill(255);
     noStroke();
