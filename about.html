@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- App title -->
+    <title>Arthur Gakahu</title>
+    <!-- loading scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>      
+    <!-- bouncing balls script -->
+    <script src="bouncingballs.js"></script>
+
+    <!-- Link css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="page-container">
+        <!-- Navigation bar -->
+        <header class="header" id="transparent-header">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><h3>ARTHUR<br>GAKAHU</h3></a>
+
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+            <!-- Menu -->
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="about.html" class="inactive-link">About</a></li>
+                    <li><a href="animations.html">Animations</a> </li>
+                    <li><a href="graphics.html">Graphics</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main> 
+            <div id="about-info">
+                <p>I make animations.</p>         
+                <p><span class="email-icon">&#9993;</span> arthurgakahu@gmail.com</p>
+            </div>
+            <div id = "aboutCanvas"></div>
+        </main>
+        <!-------------------------footer begins here-----------------> 
+        <div class = "footer" id="transparent-footer">
+            <div class="footer-studio">
+            <img src="data/images/spark.png"><p>spark <br> studios</p>
+            </div>    
+            <div class = "footer-media-links">
+                <div class = "footer-vimeo-link">
+                    <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+                </div>
+                <div class = "footer-yt-link">
+                    <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+                </div>
+            </div>  
+            <div class = "footer-email"> 
+                <img src="data/images/email.png">
+                <p>arthurgakahu@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

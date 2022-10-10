@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- App title -->
+    <title>Arthur Gakahu</title>
+
+    <!-- Link css file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #animation_container {
+            position: relative;
+            left:-100px;
+            top: -50px;
+        } 
+    </style>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="the_kwambox.js"></script>
+    <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp=AdobeAn.getComposition("0FC5237CB528114381BBC69F2497FDCC");
+            var lib=comp.getLibrary();
+            handleComplete({},comp);
+        }
+        function handleComplete(evt,comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib=comp.getLibrary();
+            var ss=comp.getSpriteSheet();
+            exportRoot = new lib.loopforweb();
+            stage = new lib.Stage(canvas);	
+            //Registers the "tick" event listener.
+            fnStartAnimation = function() {
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+            }	    
+            //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    </script>
+
+</head>
+<body onload="init();" style="margin:0px;">
+    <div class="page-container">
+        <!-- Navigation bar -->
+        <header class="header">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><h3>ARTHUR<br>GAKAHU</h3></a>
+
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+            <!-- Menu -->
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="animations.html" class="inactive-link">Animations</a> </li>
+                    <li><a href="graphics.html">Graphics</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main>
+            <div class="col-full-width" id="animations01"></div>
+            <div class="col-full-width" id="animations02"></div>
+            <div class="col-full-width" id="animations03"></div>
+            <div class="col-full-width" id="animations04"></div>
+            <div class="col-full-width" id="animations05"></div>
+            <div class="col-full-width" id="animations06"></div> 
+            <div class="col-full-width" id="animations07"></div>
+            <div class="col-full-width" id="animations08"></div>
+            <div class="col-full-width" id="animations09"></div>  
+            <div class="col-full-width" id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:650px; height:650px">
+                <canvas id="canvas" width="650" height="650" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 1.00);"></canvas>
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:650px; height:650px; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
+            </div>  
+        </main>
+        <!-------------------------footer begins here-----------------> 
+        <div class = "footer">
+            <div class="footer-studio">
+            <img src="data/images/spark.png"><p>spark <br> studios</p>
+            </div>    
+            <div class = "footer-media-links">
+                <div class = "footer-vimeo-link">
+                    <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
+                </div>
+                <div class = "footer-yt-link">
+                    <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
+                </div>
+            </div>  
+            <div class = "footer-email"> 
+                <img src="data/images/email.png">
+                <p>arthurgakahu@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
