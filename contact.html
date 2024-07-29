@@ -26,21 +26,32 @@
         <!-- Menu -->
         <nav class="nav">
             <ul class="menu">
-                <li><a href="about.html" class="inactive-link">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="inactive-link">Contact</a></li>
             </ul>
         </nav>
     </header>
     <!-- Main content -->
-    <main id="about-page"> 
-        <div id="about-info">
-            <p>Hi,<br><br> I'm Arthur, an animator based in Naivasha.</p>   
-            <p>I help people tell their stories using animated visual content.</p>       
+    <main id="contact-page"> 
+        <div id="contact-wrapper">
+            <div id="contact-info">
+                <h1>Get In Touch</h1><br>
+                <p>if you can imagine it, we can visualize it.</p>
+            </div>
+            <div id="form-container">
+                <form action="mailto:gakahuspa@gmail.com" method="GET">
+                <input type="text" id="name" name="name" placeholder="Name..">
+                <input type="text" id="email" name="email" placeholder="Email..">
+                <textarea id="description" name="description" placeholder="What project do you have in mind?" style="height:200px"></textarea>
+                <input type="text" id="budget" name="budget" placeholder="What is your budget?">
+                <input type="text" id="deadline" name="deadline" placeholder="When do you want it finished?">     
+                <div id="button-wrapper"><input type="submit" value="Submit"></div>
+                </form>
+            </div>
         </div>
-        <div id = "aboutCanvas"></div>
     </main>
     <!-------------------------footer begins here-----------------> 
-    <div class = "footer" id="footer-fixed1">
+    <div class = "footer" id="footer-fixed2">
         <div class="footer-studio"><img src="data/images/spark.png"><p>spark <br> studios</p></div>    
         <div class = "footer-media-links">
             <div class = "footer-vimeo-link"><a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a></div>
