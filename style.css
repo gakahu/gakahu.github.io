@@ -270,15 +270,13 @@ ul{
     width: 100%;
     color: white;
     margin: auto;
-    padding-top: 10em; 
     padding-right: 0;
 }
 #about-info p{
-    font-size: larger;
+    font-size: medium;
     font-family: monospace;
     line-height: 1.5em;
     padding-bottom: 2em;
-    font-size: 160%;
 }
 #about-info span{
     font-size : 15px;
