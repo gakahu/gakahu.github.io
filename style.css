@@ -6,7 +6,6 @@
     --black: #36383F;
     --grey: #85888C;
 }
-
 /* Reset */
 *{
     margin: 0;
@@ -27,7 +26,7 @@ ul{
     list-style: none;
 }
 
-/* Header */
+/* ----------------------- Header -----------------------------------------------------------------*/
 .header{
     /* background-color: var(--black);
     box-shadow: 1px 1px 5px 0px var(--grey); */
@@ -40,183 +39,7 @@ ul{
     background-color: transparent;
     box-shadow: none;
 }
-/* column-styling begins here used in the animations and graphics pages-------------------------------------------------------------------------------------*/
-.page-container{
-    position: relative;
-    min-height: 100vh;
-}
-.col-full-width{
-    width: 100%;
-    height: 400px;
-    padding-bottom: 0;
-    background-repeat: no-repeat;
-    background-size: contain;  
-    
-    /* background-position: -10px -10px; */
-}
-main{
-    /* helps control the footer */
-    padding-bottom: 2.5rem;
-}
-/* -----------------animations--------------------------------------  */
-#homeCanvas{
-    /* div containing the starfield animation in landing page */
-    position: absolute;
-    width: 100%;
-    /* height: 110vh; */
-    z-index: -1;
-    top: 0;
-}
-#aboutCanvas{
-    /* div containing the bouncing ball animation in landing page */
-    position: absolute;
-    width: 100%;
-    /* height: 110vh; */
-    z-index: -1;
-    top: 0;
-}
-#animations01{   
-    background-image: url('data/gifs/url.gif'); 
-    background-size: 130%;
-}
-#animations02{   
-    background-image: url('data/gifs/crack.gif'); 
-    background-size: 130%;
-}
-#animations03{   
-    background-image: url('data/gifs/dollar.gif'); 
-}
-#animations04{   
-    background-image: url('data/gifs/terrain.gif');
-    background-size: 110%; 
-    background-position: -20px;
-}
-#animations05{   
-    background-image: url('data/gifs/flower.gif'); 
-    background-size: 104%; 
-    /* background-position: -20px; */
-}
-#animations06{   
-    background-image: url('data/gifs/2020.gif');
-    background-size: 110%;  
-}
-#animations07{   
-    background-image: url('data/gifs/nyashinski.gif');
-    background-size: 110%;  
-}
-#animations08{   
-    background-image: url('data/gifs/leo.gif');
-    background-size: 110%;  
-}
-#animations09{   
-    background-image: url('data/gifs/flag.gif');
-}
-#animations10{   
-    background-image: url('data/gifs/crack_square.gif'); 
-}
-/* ---------graphics/stills ---------------*/
-#graphics01{
-    background-image: url('data/graphics/bakery.png') ;
-    background-size: 110%; 
-}
-#graphics02{
-    background-image: url('data/graphics/tommy.png') ;
-    background-size: 110%; 
-}
-#graphics03{
-    background-image: url('data/graphics/donut.png') ;
-    
-}
-/* #graphics04{
-    background-image: url('data/graphics/donut.png') ;
-    background-size: 110%; 
-}
-#graphics05{
-    background-image: url('data/graphics/house.png') ;
-}
-#graphics06{
-    background-image: url('data/graphics/house.png') ;
-} */
-/* Footer */
-/* ------------------------------------------------------------footer------------------------------------------------------------------------------------------------------ */
-.footer{
-    position: absolute;
-    bottom: 0;
-    /* background-color: var(--black);
-    box-shadow: 1px 1px 5px 0px var(--grey); */
-    background-color: black;
-    width: 100%;
-    padding-left : 20px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-#transparent-footer{
-    background-color: transparent;
-    box-shadow: none;
-}
-.footer-email{
-    width : 60%;
-    
-}
-.footer-email img{
-    float : left;
-    padding-right: 8px;
-    padding-top: 2px;;
-}
-.footer-email p{
-    color: whitesmoke;
-    font-family: monospace;
-}
-.footer-media-links{
-    width : 40%; 
-    padding-bottom: 1em; 
-}
-.footer-vimeo-link{
-    float: left;
-    padding-right: 2em;
-}
-.footer-yt-link{
-    padding-top: 0.15em;
-}
-.footer-studio{
-    float : right;
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-}
-.footer-studio img{
-    float : left;
-}
-.footer-studio p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-    color: white;
-    padding-top: 0.6em;
-    padding-left: 0.6em;
-    float : right;
-}
-
-/* about page begins here------------------------------------------------------------------------------------------*/
-#about-info{
-    /* div containing 'about' information */
-    position: absolute;
-    display: inline-block;
-    margin-top: 120px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    }
-#about-info p{
-    font-size: larger;
-    font-family: monospace;
-    padding-bottom: 2em;
-}
-#about-info span{
-    font-size : 15px;
-}
-
-
-/* navigation menu begins here------------------------------------------------------------------------------------------*/
+/* -----------------------------------------------navigation menu begins here------------------------------------------------------------------------------------------*/
 /* Logo */
 .logo{
     display: inline-block;
@@ -241,44 +64,34 @@ main{
     background-color: black;
     overflow: hidden;
 }
-
 .menu a{
     display: block;
     padding: 30px;
     color: var(--white);
-
 }
-
 .menu a:hover{
     background-color: var(--grey);
 }
-
 .nav{
     max-height: 0;
     transition: max-height .5s ease-out;
 }
-
 .inactive-link{
     text-decoration: underline;
 }
-
 /* Menu Icon */
 .hamb{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
 }
-
-
 .hamb-line {
     background: var(--white);
     display: block;
     height: 2px;
     position: relative;
-    width: 24px;
-    
+    width: 24px;   
 }
-
 .hamb-line::before,
 .hamb-line::after{
     background: var(--white);
@@ -289,42 +102,246 @@ main{
     transition: all .2s ease-out;
     width: 100%;
 }
-
 .hamb-line::before{
     top: 5px;
 }
-
 .hamb-line::after{
     top: -5px;
 }
-
-
 .side-menu {
     display: none;
 }
-
 /* Toggle menu icon */
-
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
-
 .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
 }
-
 .side-menu:checked ~ .hamb .hamb-line::before {
     transform: rotate(-45deg);
     top:0;
-
 }
-
 .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
 }
 /* navigation menu ends here------------------------------------------------------------------------------------------*/
 
+/* ------------------------------------------- Footer ----------------------------------------------------------------- */
+.footer{
+    background-color: black;
+    width: 100%;
+    padding-left : 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#transparent-footer{
+    background-color: transparent;
+    box-shadow: none;
+}
+.footer-email{
+    width : 60%;    
+}
+.footer-email img{
+    float : left;
+    padding-right: 8px;
+    padding-top: 2px;;
+}
+.footer-email p{
+    color: whitesmoke;
+    font-family: monospace;
+}
+.footer-media-links{
+    width : 40%; 
+    padding-bottom: 1em; 
+}
+.footer-vimeo-link{
+    float: left;
+    padding-right: 2em;
+}
+.footer-yt-link{
+    padding-top: 0.15em;
+}
+.footer-studio{
+    float : right;
+    border: solid black;
+}
+.footer-studio img{
+    float : left;
+}
+.footer-studio p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: white;
+    padding-top: 0.6em;
+    padding-left: 0.6em;
+    float : right;
+}
+/* fix the footer in the about and contact pages to the bottom */
+#footer-fixed1{
+    position: fixed;
+    bottom: 0;
+}
+#footer-fixed2{
+    position: fixed;
+    bottom: 0;
+}
+/* ---------------------------------------Landing Page-------------------------------------------------------------------------------------*/
+/* black bg for the landing page*/
+#landing-page, #contact-page{
+    background-color: black;
+}
+
+
+/* Walt Disney's quote*/
+/* #quote-container{
+    display:inline-block;
+    height: 77vh;
+    border: solid cyan;
+    text-align: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain
+} 
+#typed-out{
+    overflow: hidden;
+    border-right: .15em solid white;
+    font-size: 4em;
+    width:0;
+    animation: typing 1s forwards;
+}
+@keyframes typing{
+    from { width:0 }
+    to { width: 100% }
+}*/
+
+/* animation columns */
+.half-column{
+    width: 100%;
+    height: 500px;
+    padding-bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+/* -----------------animations------------------------  */
+#animations01{   
+    background-image: url('data/gifs/tushop.gif'); 
+}
+#animations02{   
+    background-image: url('data/gifs/robot01.gif');
+}
+#animations03{   
+    background-image: url('data/gifs/dollar.gif'); 
+}
+#animations04{   
+    background-image: url('data/gifs/eezyz_s.gif');
+}
+#animations05{   
+    background-image: url('data/gifs/nope.gif');
+}
+#animations06{   
+    background-image: url('data/gifs/robot02.gif');
+}
+#animations07{   
+    background-image: url('data/gifs/flower.gif');
+}
+#animations08{   
+    background-image: url('data/gifs/moko.gif');
+}
+#animations09{   
+    background-image: url('data/gifs/flag.gif');
+}
+#animations10{   
+    background-image: url('data/gifs/nyashinski.gif'); 
+}
+#animations11{   
+    background-image: url('data/gifs/furniture.gif'); 
+}
+#animations12{   
+    background-image: url('data/gifs/url.gif'); 
+}
+
+
+/*----------------------------------------------about page-----------------------------------------------------------------------*/
+/*div wrapper for about info*/
+#about-info{
+    padding: 4em;
+    width: 100%;
+    color: white;
+    margin: auto;
+    padding-top: 10em; 
+    padding-right: 0;
+}
+#about-info p{
+    font-size: larger;
+    font-family: monospace;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+    font-size: 160%;
+}
+#about-info span{
+    font-size : 15px;
+}
+#about-info #about-info-email{
+    font-size: 100%; 
+}
+/* div containing the bouncing ball animation in landing page */
+#aboutCanvas{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+}
+/*-----------------------------------------------contact page----------------------------------------------------*/
+#contact-wrapper{
+    width: 100%;
+    color: white;
+}
+#contact-info{
+    width: 100%;
+    padding-top: 2em;
+}
+#contact-info h1{
+    font-size: 100%;
+    text-align: center;
+}
+#contact-info p{
+    text-align: center;
+}
+#form-container {
+    width:100%;
+    border-radius: 5px;
+    padding: 20px;
+    height:100%;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: black;
+    color: white;
+}   
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#button-wrapper{
+    text-align: center ;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
 /* Responsiveness */
@@ -338,31 +355,68 @@ main{
         float: right;
         width: fit-content;
         background-color: transparent;
-
     }
-
     .menu li{
         float: left;
     }
-
     .menu a:hover{
         background-color: transparent;
-        color: var(--grey);
-        
-    }
-    
+        color: var(--grey);        
+    }   
     .hamb{
         display: none;
     }
-    /*nav menu for wider screens ends here---------*/
-    .col-full-width{
-        width: 60%;
-        height: 500px;
-        margin:0 auto;
+    /*------------------------------------------------Landing Page ---------------------------*/
+    .column-wrapper{
+        display:flex;
+        flex-wrap:wrap;
+        padding-left: 5em;
+        padding-top: 2em;
+        width: 100%;
     }
-    
-    /*footer*/
-    .footer-email {
-        width : 40%
+    .half-column{
+        width: 30%;
+        height:500px;
+    }
+    .column-space{
+        width:2%;
+    }
+    /*------------------------------------------------- About Page --------------------------------------------*/
+    #about-info{
+        margin: auto;
+        width: 50%;
+        padding-top: 10em; 
+    }
+    #about-info p{
+        font-size: 160%;
+    }
+    #about-info span{
+        font-size : 15px;
+    }
+    #about-info #about-info-email{
+        font-size: 100%; 
+        text-align: right;
+    }
+    /*------------------------------------------------- Contact Page ----------------------------------------*/
+    #contact-page{
+        background-color: black;
+        border: solid black;
+        padding-bottom: 4em;
+    }
+    #contact-wrapper{
+        display:flex;
+        flex-wrap:wrap;
+        margin-top: 100px;
+        padding-left: 16%;
+        padding-top: 1em;
+        margin-bottom: 100px;
+    }
+    #contact-info{
+    width: 33%;
+    padding-left: 1em;
+    }    
+    #form-container {
+    width:44%;
+    border-radius: 5px;
     }
 }

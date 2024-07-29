@@ -4,61 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- App title -->
     <title>Arthur Gakahu</title>
-    <!-- loading p5.js scripts -->
+    <!-- loading scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
-    <!-- starield script -->
-    <script src="starfield.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>      
     <!-- Link css file -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body>
-    <div class="page-container">
-        <!-- Navigation bar -->
-        <header class="header" id="transparent-header">
-            <!-- Logo -->
-            <a href="index.html" class="logo"><h3>ARTHUR<br>GAKAHU</h3></a>
-
-            <!-- Hamburger icon -->
-            <input class="side-menu" type="checkbox" id="side-menu"/>
-            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-            <!-- Menu -->
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="animations.html">Animations</a> </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Main content -->
-        <main >
-            <div id = "homeCanvas"></div>
-        </main>
-        <!-------------------------footer begins here-----------------> 
-        <div class = "footer" id="transparent-footer">
-            <div class="footer-studio">
-            <img src="data/images/spark.png"><p>spark <br> studios</p>
-            </div>    
-            <div class = "footer-media-links">
-                <div class = "footer-vimeo-link">
-                    <a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a>
-                </div>
-                <div class = "footer-yt-link">
-                    <a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a>
-                </div>
-            </div>  
-            <div class = "footer-email"> 
-                <img src="data/images/email.png">
-                <p>arthurgakahu@gmail.com</p>
-            </div>
-        </div>
+<body onload="init();" style="margin:0px;">
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="index.html" class="logo"><h3>ARTHUR<br>GAKAHU</h3></a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main id="landing-page">
+        <!-- <div id="quote-container"><div id="typed out">Animation can explain whatever the mind of man can achieve</div></div>    -->
+        <div class="column-wrapper"><div class="half-column" id="animations01"></div><div class="column-space"></div><div class="half-column" id="animations02"></div><div class="column-space"></div><div class="half-column" id="animations03"></div></div>
+        <div class="column-wrapper"><div class="half-column" id="animations04"></div><div class="column-space"></div><div class="half-column" id="animations05"></div><div class="column-space"></div><div class="half-column" id="animations06"></div></div>
+        <div class="column-wrapper"><div class="half-column" id="animations07"></div><div class="column-space"></div><div class="half-column" id="animations08"></div><div class="column-space"></div><div class="half-column" id="animations09"></div></div>
+        <div class="column-wrapper"><div class="half-column" id="animations10"></div><div class="column-space"></div><div class="half-column" id="animations11"></div><div class="column-space"></div><div class="half-column" id="animations12"></div></div>
+    </main>
+    <!-------------------------footer begins here-----------------> 
+    <div class = "footer">
+        <div class="footer-studio"><img src="data/images/spark.png"><p>spark <br> studios</p></div>    
+        <div class = "footer-media-links">
+            <div class = "footer-vimeo-link"><a href="https://vimeo.com/user44101212" target ="_blank"><img src="data/images/vimeo.png"></a></div>
+            <div class = "footer-yt-link"><a href="https://www.youtube.com/channel/UCxsZjtYiQcxUaYU45m2aG-Q" target ="_blank"><img src="data/images/youtube.png"></a></div>
+        </div>  
+        <div class = "footer-email"><img src="data/images/email.png"><p>arthurgakahu@gmail.com</p></div>
     </div>
 </body>
 </html>
