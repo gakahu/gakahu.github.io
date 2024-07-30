@@ -266,14 +266,15 @@ ul{
 /*----------------------------------------------about page-----------------------------------------------------------------------*/
 /*div wrapper for about info*/
 #about-info{
-    /* padding: 4em; */
+    padding-top: 4em;
     width: 100%;
     color: white;
     margin: auto;
-    /* padding-right: 0; */
+    padding-left: 2em;
+    padding-right: 2em;
 }
 #about-info p{
-    font-size: large;
+    font-size: 1.25em;
     font-family: monospace;
     line-height: 1.5em;
     padding-bottom: 2em;
