@@ -244,22 +244,22 @@ ul{
     background-image: url('data/gifs/robot02.gif');
 }
 #animations07{   
-    background-image: url('data/gifs/flower.gif');
-}
-#animations08{   
     background-image: url('data/gifs/moko.gif');
 }
+#animations08{   
+    background-image: url('data/gifs/furniture.gif');
+}
 #animations09{   
-    background-image: url('data/gifs/flag.gif');
+    background-image: url('data/gifs/flower.gif');
 }
 #animations10{   
     background-image: url('data/gifs/nyashinski.gif'); 
 }
 #animations11{   
-    background-image: url('data/gifs/furniture.gif'); 
+    background-image: url('data/gifs/url.gif'); 
 }
 #animations12{   
-    background-image: url('data/gifs/url.gif'); 
+    background-image: url('data/gifs/flag.gif'); 
 }
 
 
